@@ -1,0 +1,45 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="bg-gray-100 dark:bg-gray-900">
+    <ActionBar title="Productivity Hub" class="bg-white dark:bg-gray-800" />
+    
+    <GridLayout rows="*" columns="*">
+        <ScrollView>
+            <GridLayout rows="auto, auto, auto" columns="*, *" class="p-4">
+                <!-- Calendar -->
+                <StackLayout row="0" col="0" class="feature-card m-2 p-4 bg-white dark:bg-gray-800 rounded-lg" tap="{{ onCalendarTap }}">
+                    <Label text="&#xf073;" class="fas text-3xl text-blue-500 text-center" />
+                    <Label text="Calendar" class="text-lg text-center dark:text-white" />
+                </StackLayout>
+
+                <!-- Tasks -->
+                <StackLayout row="0" col="1" class="feature-card m-2 p-4 bg-white dark:bg-gray-800 rounded-lg" tap="{{ onTasksTap }}">
+                    <Label text="&#xf0ae;" class="fas text-3xl text-blue-500 text-center" />
+                    <Label text="Tasks" class="text-lg text-center dark:text-white" />
+                </StackLayout>
+
+                <!-- Goals -->
+                <StackLayout row="1" col="0" class="feature-card m-2 p-4 bg-white dark:bg-gray-800 rounded-lg" tap="{{ onGoalsTap }}">
+                    <Label text="&#xf091;" class="fas text-3xl text-blue-500 text-center" />
+                    <Label text="Goals" class="text-lg text-center dark:text-white" />
+                </StackLayout>
+
+                <!-- Notes -->
+                <StackLayout row="1" col="1" class="feature-card m-2 p-4 bg-white dark:bg-gray-800 rounded-lg" tap="{{ onNotesTap }}">
+                    <Label text="&#xf249;" class="fas text-3xl text-blue-500 text-center" />
+                    <Label text="Notes" class="text-lg text-center dark:text-white" />
+                </StackLayout>
+
+                <!-- Deadlines -->
+                <StackLayout row="2" col="0" class="feature-card m-2 p-4 bg-white dark:bg-gray-800 rounded-lg" tap="{{ onDeadlinesTap }}">
+                    <Label text="&#xf017;" class="fas text-3xl text-blue-500 text-center" />
+                    <Label text="Deadlines" class="text-lg text-center dark:text-white" />
+                </StackLayout>
+
+                <!-- Reminders -->
+                <StackLayout row="2" col="1" class="feature-card m-2 p-4 bg-white dark:bg-gray-800 rounded-lg" tap="{{ onRemindersTap }}">
+                    <Label text="&#xf0f3;" class="fas text-3xl text-blue-500 text-center" />
+                    <Label text="Reminders" class="text-lg text-center dark:text-white" />
+                </StackLayout>
+            </GridLayout>
+        </ScrollView>
+    </GridLayout>
+</Page>
